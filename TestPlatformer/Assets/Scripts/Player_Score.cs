@@ -19,7 +19,7 @@ public class Player_Score : MonoBehaviour {
 
         if (timeLeft < 0.01f)
         {
-            SceneManager.LoadScene("heck");
+            SceneManager.LoadScene("Level 1");
         }
 	}
 

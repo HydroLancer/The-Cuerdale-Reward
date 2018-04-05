@@ -22,11 +22,10 @@ GameObject:
   - component: {fileID: 212756656437568324}
   - component: {fileID: 61383617317256320}
   - component: {fileID: 114505377575351358}
-  - component: {fileID: 111336394985529516}
   - component: {fileID: 114422642139742874}
   - component: {fileID: 114246277062284466}
   - component: {fileID: 50295427828178634}
-  - component: {fileID: 95477780732796812}
+  - component: {fileID: 95516267182754890}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -41,7 +40,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055871269431384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3835108, y: -2.0148194, z: 0}
+  m_LocalPosition: {x: -3.2, y: -0.59, z: 0}
   m_LocalScale: {x: 1, y: 1.0061566, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -92,7 +91,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0916294, y: 1.697056}
   m_EdgeRadius: 0
---- !u!95 &95477780732796812
+--- !u!95 &95516267182754890
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -101,7 +100,7 @@ Animator:
   m_GameObject: {fileID: 1055871269431384}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 56391931b29741448a12717f1559c8be, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ed8b4c15393b6a4d8614eb9e5194d89, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -109,21 +108,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!111 &111336394985529516
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1055871269431384}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: c2f651fd784a264428c9b51feaf5b18a, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 01ee2b20dbcb2dd4cbf90a0ce06c5fe5, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114246277062284466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,7 +134,7 @@ MonoBehaviour:
   facingRight: 0
   playerJumpPower: 1250
   isGrounded: 0
-  distanceToBottomOfPlayer: 1.3
+  distanceToBottomOfPlayer: 1.2824
 --- !u!114 &114505377575351358
 MonoBehaviour:
   m_ObjectHideFlags: 1

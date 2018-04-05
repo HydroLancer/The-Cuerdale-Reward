@@ -19,7 +19,7 @@ public class Player_Health : MonoBehaviour {
 	}
     IEnumerator Die()
     {
-        SceneManager.LoadScene("heck");
+        SceneManager.LoadScene("Level 1");
         return null;
     }
 }
