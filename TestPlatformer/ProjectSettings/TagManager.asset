@@ -9,6 +9,7 @@ TagManager:
   - Tally
   - enemy
   - platform
+  - Tree
   layers:
   - Default
   - TransparentFX

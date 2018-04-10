@@ -60,6 +60,7 @@
      <Compile Include="Assets\Scripts\Player_Move.cs" />
      <Compile Include="Assets\Scripts\Player_Score.cs" />
      <Compile Include="Assets\Sunnyland\artwork\Environment\Background.cs" />
+     <None Include="Assets\read me.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

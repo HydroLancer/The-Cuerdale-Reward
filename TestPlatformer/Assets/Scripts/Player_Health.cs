@@ -12,7 +12,7 @@ public class Player_Health : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (gameObject.transform.position.y < -7)
+		if (gameObject.transform.position.y < -20)
         {
             Die();
         }
