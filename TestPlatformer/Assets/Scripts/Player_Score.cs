@@ -10,9 +10,15 @@ public class Player_Score : MonoBehaviour {
     public int xMoveDirection;
     public int MoveSpeed = 2;
 
+    private string currentScene;
+
     public GameObject timeLeftUI;
     public GameObject playerScoreUI;
 	
+    void Start()
+    {
+        currentScene = SceneManager.GetActiveScene().name;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -22,13 +28,19 @@ public class Player_Score : MonoBehaviour {
 
         if (timeLeft < 0.01f)
         {
-            SceneManager.LoadScene("Level 1");
+            SceneManager.LoadScene(currentScene);
         }
 	}
 
     void OnTriggerEnter2D (Collider2D trig)
     {
         if (trig.gameObject.tag == "endlevel1")
+        {
+            CountScore();
+            SceneManager.LoadScene("Level 2");
+
+        }
+        if (trig.gameObject.tag == "endlevel2")
         {
             CountScore();
             SceneManager.LoadScene("heck");
@@ -39,6 +51,7 @@ public class Player_Score : MonoBehaviour {
             playerScore += 10;
             Destroy(trig.gameObject);
         }
+        
         
         
     }

@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Player_Health : MonoBehaviour {
 
+    private string currentScene;
     // Use this for initialization
 	void Start ()
-    { 
+    {
+        currentScene = SceneManager.GetActiveScene().name;
 	}
 	
 	// Update is called once per frame
@@ -19,7 +21,7 @@ public class Player_Health : MonoBehaviour {
 	}
     IEnumerator Die()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene(currentScene);
         return null;
     }
 }

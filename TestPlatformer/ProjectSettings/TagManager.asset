@@ -12,6 +12,7 @@ TagManager:
   - Tree
   - hideable
   - endlevel1
+  - endlevel2
   layers:
   - Default
   - TransparentFX

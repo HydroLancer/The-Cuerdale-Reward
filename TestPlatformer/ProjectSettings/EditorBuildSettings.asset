@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/heck.unity
     guid: 968826eecf3ecb74c88042f8510ff88a
+  - enabled: 1
+    path: Assets/Level 2.unity
+    guid: bd1483e749bc2b246ae5dfe000d04011
