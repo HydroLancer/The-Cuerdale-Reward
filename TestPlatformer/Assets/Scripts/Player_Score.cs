@@ -7,6 +7,9 @@ using UnityEngine.UI;
 public class Player_Score : MonoBehaviour {
     private float timeLeft = 120;
     public int playerScore = 0;
+    public int xMoveDirection;
+    public int MoveSpeed = 2;
+
     public GameObject timeLeftUI;
     public GameObject playerScoreUI;
 	
@@ -25,15 +28,18 @@ public class Player_Score : MonoBehaviour {
 
     void OnTriggerEnter2D (Collider2D trig)
     {
-        if (trig.gameObject.tag == "Tally")
+        if (trig.gameObject.tag == "endlevel1")
         {
             CountScore();
+            SceneManager.LoadScene("heck");
+
         }
         if (trig.gameObject.tag == "collectible")
         {
             playerScore += 10;
             Destroy(trig.gameObject);
         }
+        
         
     }
     void CountScore()
