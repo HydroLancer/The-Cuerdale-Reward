@@ -37,13 +37,13 @@ public class Player_Score : MonoBehaviour {
         if (trig.gameObject.tag == "endlevel1")
         {
             CountScore();
-            SceneManager.LoadScene("Level 2");
+            SceneManager.LoadScene("Info");
 
         }
         if (trig.gameObject.tag == "endlevel2")
         {
             CountScore();
-            SceneManager.LoadScene("heck");
+            SceneManager.LoadScene("Title");
 
         }
         if (trig.gameObject.tag == "collectible")
