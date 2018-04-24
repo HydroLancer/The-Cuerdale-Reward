@@ -166,6 +166,7 @@ public class Player_Move : MonoBehaviour
     }
     void OnCollisionExit2D(Collision2D col)
     {
+        isGrounded = false;
         DetectCollision(col);
     }
 }
