@@ -95,7 +95,7 @@ public class Player_Move : MonoBehaviour
         collisionBottom = false;
         collisionLeft = false;
         collisionRight = false;
-        isGrounded = false;
+
 
 
         float yMin = col.collider.bounds.min.y;
