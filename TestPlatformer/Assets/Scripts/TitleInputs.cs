@@ -28,6 +28,18 @@ public class TitleInputs : MonoBehaviour {
             {
                 SceneManager.LoadScene("Level 2");
             }
+            if (currentScene == "Credits")
+            {
+                SceneManager.LoadScene("Title");
+            }
+            if (currentScene == "GameOver")
+            {
+                SceneManager.LoadScene("Credits");
+            }
+        }
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
         }
 	}
 }

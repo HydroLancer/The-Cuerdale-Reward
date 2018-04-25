@@ -43,7 +43,7 @@ public class Player_Score : MonoBehaviour {
         if (trig.gameObject.tag == "endlevel2")
         {
             CountScore();
-            SceneManager.LoadScene("Title");
+            SceneManager.LoadScene("GameOver");
 
         }
         if (trig.gameObject.tag == "collectible")
