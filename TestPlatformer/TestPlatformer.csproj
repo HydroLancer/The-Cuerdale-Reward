@@ -238,8 +238,10 @@
     <Compile Include="Assets\Scripts\Baclground.cs" />
     <Compile Include="Assets\Scripts\cameraSystem.cs" />
     <Compile Include="Assets\Scripts\Conditions.cs" />
+    <Compile Include="Assets\Scripts\currentPlayThrough.cs" />
     <Compile Include="Assets\Scripts\Enemy_Health.cs" />
     <Compile Include="Assets\Scripts\Enemy_Move.cs" />
+    <Compile Include="Assets\Scripts\GameOverScore.cs" />
     <Compile Include="Assets\Scripts\Player_Health.cs" />
     <Compile Include="Assets\Scripts\Player_Move.cs" />
     <Compile Include="Assets\Scripts\Player_Score.cs" />

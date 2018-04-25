@@ -13,7 +13,6 @@ public class Player_Score : MonoBehaviour {
     private string currentScene;
 
     public GameObject timeLeftUI;
-    public GameObject playerScoreUI;
 	
     void Start()
     {
@@ -23,8 +22,9 @@ public class Player_Score : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         timeLeft -= Time.deltaTime;
-        playerScoreUI.gameObject.GetComponent<Text>().text = ("Score: " + playerScore);
-        timeLeftUI.gameObject.GetComponent<Text>().text = ("Time Left: " + (int) timeLeft);
+
+        timeLeftUI.gameObject.GetComponent<Text>().text = ("Time Left: " + (int) timeLeft + "\nScore: " + playerScore + "\nLives: " + currentPlayThrough.GetLives());
+
 
         if (timeLeft < 0.01f)
         {
@@ -37,13 +37,15 @@ public class Player_Score : MonoBehaviour {
         if (trig.gameObject.tag == "endlevel1")
         {
             CountScore();
+            currentPlayThrough.IncrementScore(playerScore);
             SceneManager.LoadScene("Info");
 
         }
         if (trig.gameObject.tag == "endlevel2")
         {
             CountScore();
-            SceneManager.LoadScene("Title");
+            currentPlayThrough.IncrementScore(playerScore);
+            SceneManager.LoadScene("GameOver");
 
         }
         if (trig.gameObject.tag == "collectible")

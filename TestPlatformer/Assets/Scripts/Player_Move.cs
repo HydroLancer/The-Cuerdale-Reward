@@ -97,7 +97,6 @@ public class Player_Move : MonoBehaviour
         collisionRight = false;
 
 
-
         float yMin = col.collider.bounds.min.y;
         float yMax = col.collider.bounds.max.y;
         float xMin = col.collider.bounds.min.x;
