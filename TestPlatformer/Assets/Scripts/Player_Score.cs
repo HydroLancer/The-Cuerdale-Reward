@@ -44,10 +44,7 @@ public class Player_Score : MonoBehaviour {
         if (trig.gameObject.tag == "endlevel2")
         {
             CountScore();
-<<<<<<< HEAD
             currentPlayThrough.IncrementScore(playerScore);
-=======
->>>>>>> a4d0ffb5cae330f265491eb0692a7f88184db500
             SceneManager.LoadScene("GameOver");
 
         }
